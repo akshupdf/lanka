@@ -29,7 +29,7 @@ function Adminpanel() {
         return fetchUtils.fetchJson(url, options);
     }
 
-    const dataProvider = simpleRestProvider('http://lankanew.onrender.com/' ,fetchJson);
+    const dataProvider = simpleRestProvider('https://lanka-r498.onrender.com/' ,fetchJson);
 
     return(
         <div>
