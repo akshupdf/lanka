@@ -31,7 +31,7 @@ function Adminpanel() {
     //     return fetchUtils.fetchJson(url, options);
     // }
 
-    const dataProvider = jsonServerProvider('http://lankanew.onrender.com');
+    const dataProvider = jsonServerProvider('https://lankanew.onrender.com');
 
     return(
         <div>
