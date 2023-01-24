@@ -198,7 +198,7 @@ function Home () {
               </div>
             </div>
           </div>
-                <div className=' sm:h-[50vh] h-[70vh] rounded-xl w-60 md:shrink-0 border-gray-400 border-2 p-2  sm:m-4 perspective cursor-pointer preserve-3d hover:my-rotate-y-180 duration-1000'>
+                <div className=' sm:h-[50vh] h-[70vh] rounded-xl  md:shrink-0 border-gray-400 border-2 p-2  sm:m-4 perspective cursor-pointer preserve-3d hover:my-rotate-y-180 duration-1000'>
             <div className=" w-80 h-50 relative  cursor-pointer items-center preserve-3d group-hover:my-rotate-y-180 duration-1000">
 
               <div className=" backface-hidden absolute cursor-pointer  "><img className=' m-2 sm:w-[30vh] w-[45vh] h-52' src={ride} alt="">
@@ -215,7 +215,7 @@ function Home () {
             </div>
           </div>
 
-                <div className=' sm:h-[50vh] h-[70vh] md:shrink-0 rounded-xl w-60 border-gray-400 border-2 sm:p-2 m-4 perspective cursor-pointer preserve-3d hover:my-rotate-y-180 duration-1000'>
+                <div className=' sm:h-[50vh] h-[70vh] md:shrink-0 rounded-xl  border-gray-400 border-2 sm:p-2 m-4 perspective cursor-pointer preserve-3d hover:my-rotate-y-180 duration-1000'>
             <div className=" w-80 h-50 relative  cursor-pointer items-center preserve-3d group-hover:my-rotate-y-180 duration-1000">
 
               <div className=" backface-hidden absolute cursor-pointer  "><img className=' m-2 sm:w-[30vh] w-[45vh] h-52' src={wild} alt="">
