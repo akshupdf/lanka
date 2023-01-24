@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {fetchUtils, Admin, Resource } from 'react-admin'
 import PostList from './components/PostList'
 import PostEdit from './components/PostEdit'
-import simpleRestProvider from 'ra-data-simple-rest'
+import jsonServerProvider from 'ra-data-json-server'
 
 import LinkList from './components/LinkList'
 import LinkEdit from './components/LinkEdit'
@@ -12,24 +12,26 @@ import Imagelist from './components/imagelist'
 import Imageedit from './components/Imageedit'
 import Minilist from './components/minilist'
 import Miniedit from './components/Miniedit'
-
+// import jsonapiClient from "ra-jsonapi-client";
 
 function Adminpanel() {
-   
-    const fetchJson = (url, options = {}) => {
-        if (!options.headers) {
-            options.headers = new Headers({ Accept: 'application/json' });
-        }
-        
-        options.headers.set('Content-Range', 'posts 0-50/50');
-        options.headers.set('Access-Control-Allow-Headers', 'Content-Range 0-50/50')
-        options.headers.set('Access-Control-Expose-Headers: Content-Range')
-        
-        
-        return fetchUtils.fetchJson(url, options);
-    }
 
-    const dataProvider = simpleRestProvider('https://lanka-r498.onrender.com/' ,fetchJson);
+    
+   
+    // const fetchJson = (url, options = {}) => {
+    //     if (!options.headers) {
+    //         options.headers = new Headers({ Accept: 'application/json' });
+    //     }
+        
+    //     options.headers.set('Content-Range', 'posts 0-50/50');
+    //     options.headers.set('Access-Control-Allow-Headers', 'Content-Range 0-50/50')
+    //     options.headers.set('Access-Control-Expose-Headers: Content-Range')
+        
+        
+    //     return fetchUtils.fetchJson(url, options);
+    // }
+
+    const dataProvider = jsonServerProvider('http://lankanew.onrender.com');
 
     return(
         <div>
